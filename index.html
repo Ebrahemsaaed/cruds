@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cruds</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-cruds">
+        <!-- start headrs -->
+        <section class="header">
+
+            <h1>CRUD</h1>
+            <P>PRODUCT MANAGEMENT SYSTEM</P>
+
+
+        </section>
+        <!-- end header -->
+        <!-- start inputs -->
+        <section class="inputs">
+            <input type="text" placeholder="title" id="title">
+            <div class="price">
+                <input onkeyup=gettotal() type="number" id="price" placeholder="price">
+                <input onkeyup=gettotal() type="number" id="texas" placeholder="texas">
+                <input onkeyup=gettotal() type="number" id="ads" placeholder="ads">
+                <input onkeyup=gettotal() type="number" id="discount" placeholder="discount">
+                <small id="total"></small>
+            </div>
+            <input type="number" id="count" placeholder="count">
+            <input type="text" id="category" placeholder="category">
+            <button id="submit"> create</button>
+        </section>
+        <!-- end inputs -->
+        <!-- start outputs -->
+        <section class="ouyputs">
+            <div class="searchblock">
+                <input type="text" onkeyup="searchdata(this.value)" placeholder="search" id="search">
+                <div class="btnsearch">
+                    <button onclick="getsearchmood(this.id)" id="searchtitle"> search by title</button>
+                    <button onclick="getsearchmood(this.id)" id="searchcategory"> search by catogery</button>
+                </div>
+                <div id="deleteall"></div>
+                <table>
+                    <tr>
+                        <th>id</th>
+                        <th>title</th>
+                        <th>price</th>
+                        <th>texas</th>
+                        <th>ads</th>
+                        <th>discount</th>
+                        <th>total</th>
+                        <th>category</th>
+                        <th>update</th>
+                        <th>delete</th>
+                    </tr>
+                    <tbody id="tbody">
+
+                    </tbody>
+
+
+
+                </table>
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+        </section>
+        <!-- end outputs -->
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
